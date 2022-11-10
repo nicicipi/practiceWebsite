@@ -66,6 +66,7 @@ function news(){
 	
 function change_text(){
 	var num += 1;
+	   var numbers = document.getElementById("numbers");
 
 	 numbers.innerHTML = num;      
     if(num == 10 ){
@@ -99,6 +100,8 @@ function change_text(){
 <br>
 <button id="newsletter" onclick="news()"><b>Join newsletter</b></button>
 </form>
+	
+	      <div id = "numbers"></div>
 </div>
 
 </body>
