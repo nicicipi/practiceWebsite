@@ -56,9 +56,22 @@ img{
 </style>
 
 <script>
+	var num = 0;
+	
 function news(){
+	
 	document.getElementById("email_thing").reset();
 	alert("It actually doesn't work! It's for testing.");
+}
+	
+function change_text(){
+	var num += 1;
+
+	 numbers.innerHTML = num;      
+    if(num == 10 ){
+    var pic = document.getElementById("pic").value;
+    document.getElementByClassName("nyaa").innerHTML = "buranya";
+    }
 }
 </script>
 </head>
@@ -66,15 +79,17 @@ function news(){
 <body>
 
 <div>
+<div id = "neco" onclick="change_Text()">
 <img src="neco-arc-dance.gif" alt="me">
-
-<h1>Hi, my name is En</h1>
-<h2>Fun facts about me:</h2>
+</div>
+	
+<h1 class="nyaa">Hi, my name is En</h1>
+<h2 class="nyaa">Fun facts about me:</h2>
 
 <ul>
-<li>17 years old</li>
-<li>Currently studying about HTML, CSS, and JavaScript</li>
-<li>Likes to draw</li>
+<li class="nyaa">17 years old</li>
+<li class="nyaa">Currently studying about HTML, CSS, and JavaScript</li>
+<li class="nyaa">Likes to draw</li>
 </ul>
 
 <p id="link">Please connect with me on <a href="https://www.instagram.com/azumi.kuun/" target="_blank"style="color:#3DFFA9;" >Instagram.</a></p>
