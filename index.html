@@ -65,12 +65,7 @@ function news(){
 }
 	
 function change_text(){
-	var num += 1;
-	   var numbers = document.getElementById("numbers");
 
-	 numbers.innerHTML = num;      
-    if(num == 10 ){
-    var pic = document.getElementById("pic").value;
     document.getElementByClassName("nyaa").innerHTML = "buranya";
     }
 }
@@ -98,7 +93,7 @@ function change_text(){
 <form id="email_thing">
 <input type="email" placeholder="Enter email" id="email_size">
 <br>
-<button id="newsletter" onclick="news()"><b>Join newsletter</b></button>
+<button id="newsletter" onclick="change_text()"><b>Join newsletter</b></button>
 </form>
 	
 	      <div id = "numbers"></div>
